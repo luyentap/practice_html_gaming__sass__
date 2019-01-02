@@ -262,12 +262,6 @@ header {
  the body of page
 ===========================================================
  *********************************************************/
-/*********************************************************
-part1: the left
-  1.posts
-  2.
-
- *********************************************************/
 .site-content {
   padding: 50px 0; }
   .site-content .row {
@@ -279,6 +273,12 @@ part1: the left
     -ms-flex-pack: distribute;
     justify-content: space-around; }
 
+/*********************************************************
+part1: the left
+  1.posts
+  2.
+
+ *********************************************************/
 .posts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -351,16 +351,6 @@ part1: the left
         top: 50%;
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%); }
-      .posts .post-grid__item .posts__inner a:hover .posts .post-grid__item .posts__inner a::before {
-        -webkit-transform: rotate(90deg);
-        transform: rotate(90deg);
-        -webkit-transition: 4s;
-        transition: 4s; }
-      .posts .post-grid__item .posts__inner a:hover .posts .post-grid__item .posts__inner a::after {
-        -webkit-transform: rotate(40deg);
-        transform: rotate(40deg);
-        -webkit-transition: 4s;
-        transition: 4s; }
     .posts .post-grid__item .posts__inner .posts__date {
       font-size: 12px;
       font-weight: 300;
@@ -371,6 +361,8 @@ part1: the left
       font-size: 25px;
       text-transform: uppercase;
       font-style: italic; }
+      .posts .post-grid__item .posts__inner .posts__title:hover {
+        color: #ffc107; }
     .posts .post-grid__item .posts__inner .posts__excerpt {
       font-size: 15px;
       font-weight: 100; }
@@ -392,6 +384,13 @@ part1: the left
         display: -ms-flexbox;
         display: flex; }
 
+/*********************************************************
+part2: the right of body page
+  1.widget :table result
+  2.twitch streaming online
+  3.event calendar
+
+ *********************************************************/
 .sidebar {
   color: white; }
   .sidebar .widget {
@@ -412,6 +411,15 @@ part1: the left
       text-transform: uppercase;
       font-style: italic;
       background: #403351; }
+      .sidebar .widget__title::before {
+        content: '';
+        background: #00ff5b;
+        width: 6px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0; }
       .sidebar .widget__title .widget__btn {
         -ms-flex-item-align: center;
         align-self: center;
@@ -463,7 +471,7 @@ part1: the left
       display: -ms-flexbox;
       display: flex;
       color: white;
-      background: url("../img/twitch-stream-1-bg.jpg");
+      background: url("../img/twitch-stream-1-bg.jpg") transparent;
       background-size: cover;
       background-color: #392D49;
       background-blend-mode: soft-light;
@@ -505,7 +513,8 @@ part1: the left
         object-fit: cover;
         margin-top: 20px;
         background-color: #392D49;
-        mix-blend-mode: hard-light; }
+        mix-blend-mode: hard-light;
+        opacity: 0.1; }
       .sidebar .twitch .twitch__content .twitch-stream-video .arrow {
         position: absolute;
         right: 50%;
@@ -534,58 +543,70 @@ part1: the left
       overflow: hidden;
       padding: 8px; }
 
-.footer .sponsors {
-  background: #362b45;
-  width: 100%; }
-  .footer .sponsors .sponsors__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    .footer .sponsors .sponsors__list .sponsors__item {
-      mix-blend-mode: soft-light; }
-      .footer .sponsors .sponsors__list .sponsors__item:hover {
-        mix-blend-mode: normal; }
+/*********************************************************
+==========================================================
+ the footer of page
+===========================================================
+ *********************************************************/
+.footer {
+  /*********************************************************
+part1: the sponsors
+ *********************************************************/
+  /*********************************************************
+  part2: the contact
 
-.footer .footer__contact {
-  width: 100%; }
-  .footer .footer__contact .contact {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    text-transform: uppercase;
-    color: white; }
-    .footer .footer__contact .contact__item {
+   *********************************************************/ }
+  .footer .sponsors {
+    background: #362b45;
+    width: 100%; }
+    .footer .sponsors .sponsors__list {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
       -ms-flex-pack: distribute;
       justify-content: space-around;
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center; }
-    .footer .footer__contact .contact__icon {
-      margin-right: 20px; }
-    .footer .footer__contact .contact__name {
-      margin-bottom: 5px;
-      padding: 0; }
-    .footer .footer__contact .contact__address {
-      font-size: 12px;
-      font-weight: 300;
-      color: #665B71; }
+      .footer .sponsors .sponsors__list .sponsors__item {
+        mix-blend-mode: soft-light; }
+        .footer .sponsors .sponsors__list .sponsors__item:hover {
+          mix-blend-mode: normal; }
+  .footer .footer__contact {
+    width: 100%; }
+    .footer .footer__contact .contact {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      text-transform: uppercase;
+      color: white; }
+      .footer .footer__contact .contact__item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+      .footer .footer__contact .contact__icon {
+        margin-right: 20px; }
+      .footer .footer__contact .contact__name {
+        margin-bottom: 5px;
+        padding: 0; }
+      .footer .footer__contact .contact__address {
+        font-size: 12px;
+        font-weight: 300;
+        color: #665B71; }
 
 /*********************************************************
 ==========================================================
