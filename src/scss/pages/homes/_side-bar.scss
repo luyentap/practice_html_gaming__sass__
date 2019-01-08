@@ -1,0 +1,163 @@
+.sidebar{
+  color:white;
+
+  .widget{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    text-align: center;
+
+    //background: $green;
+    &__title{
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 10px;
+
+      @include font($size:20px,$style:italic);
+      //font-size: 20px;
+      //font-style: italic;
+      text-transform: uppercase;
+
+      background: $purple-lighter;
+      &::before{
+        content: '';
+        background: $green;
+        width: 6px;
+        height: 100%;
+
+        position: absolute;
+        top:0;
+        bottom: 0;
+        left: 0;
+      }
+
+      .widget__btn{
+        align-self: center;
+        padding: 4px 2px;
+        border-radius: 20px;
+
+        background: #8c8297;
+        @include font($size:9px,$color:white);
+        //color:white;
+        //font-size: 9px;
+
+      }
+
+
+    }
+    &__content{
+      @import "../../modules/table";
+    }
+  }
+
+  .twitch{
+    .twitch__content {
+      background: #392D49;
+
+      border-radius: 10px;
+      margin-bottom: 20px;
+      overflow: hidden;
+
+
+      .twitch-stream {
+        display: flex;
+
+        //mix blend background image
+        background: url("../img/twitch-stream-1-bg.jpg") transparent;
+        background-size: cover;
+        background-color: #392D49 ;
+        background-blend-mode: soft-light;
+
+        @include font($weight:bold,$color:white);
+        //color: white;
+        //font-weight: bold;
+        &__feature {
+          font-weight: 700;
+          margin: 0;
+          .fa-star {
+            padding: 0;
+            margin: 0;
+          }
+        }
+        &__title {
+          margin-top: 20px;
+
+          font-style: italic;
+          text-transform: uppercase;
+        }
+        &__info {
+          @include font($size:14px,$weight:300);
+          //font-weight: 300;
+          //font-size: 14px;
+        }
+        &__status {
+          display: flex;
+          justify-content: center;
+          margin-top: 10px;
+          font-size: 12px;
+          &--online {
+            margin: 4px;
+            padding: 3px;
+
+            border-radius: 50%;
+            height: 8px;
+            width: 8px;
+          }
+        }
+      }
+      .twitch-stream-video {
+        display: block;
+        position: relative;
+        &__img {
+          overflow: hidden;
+          object-fit: cover;
+          margin-top: 20px;
+          background-color: #392D49;
+          mix-blend-mode: hard-light;
+
+          opacity: 0.1;
+        }
+        .arrow{
+          position: absolute;
+          right: 50%;
+          top:50%;
+          transform: translate(-50%,-50%);
+          width: 0;
+          height: 0;
+          border-top: 10px solid transparent;
+          border-left: 20px solid white;
+          border-bottom: 10px solid transparent;
+
+        }
+      }
+    }
+  }
+
+  .calendar{
+    .widget__content{
+      .calendar__month{
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+
+      }
+      .table__row{
+        height: 40px;
+        .day{
+          &--muted{
+            color:#a59cae ;
+          }
+          &--active{
+            border-radius: 50%;
+            overflow: hidden;
+
+            padding: 8px;
+          }
+
+        }
+      }
+    }
+  }
+}

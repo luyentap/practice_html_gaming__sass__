@@ -1,0 +1,64 @@
+.footer{
+  //overflow: hidden;
+  /*********************************************************
+part1: the sponsors
+ *********************************************************/
+  .sponsors{
+    background: #362b45;
+    width: 100%;
+    .sponsors__list{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+
+      .sponsors__item{
+        mix-blend-mode: soft-light;
+
+        &:hover{
+          mix-blend-mode:normal ;
+        }
+      }
+    }
+  }
+  /*********************************************************
+  part2: the contact
+
+   *********************************************************/
+  .footer__contact{
+    width: 100%;
+
+    .contact{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+
+      text-transform: uppercase;
+      color: white;
+      &__item{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      &__icon {
+        margin-right: 20px;
+      }
+      &__text{
+
+      }
+      &__name{
+        margin-bottom: 5px;
+        padding: 0;
+      }
+      &__address{
+        @include font($size:12px,$weight:300,$color:#665B71);
+        //font-size: 12px;
+        //font-weight: 300;
+        //color:#665B71;
+      }
+
+
+    }
+  }
+}

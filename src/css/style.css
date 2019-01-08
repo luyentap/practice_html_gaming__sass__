@@ -1,4 +1,14 @@
 @charset "UTF-8";
+/*
+retrieve color from $colors map ie. `color(primary, base)`
+ --  example in use: color: color(primary, green);
+https://codepen.io/jakealbaugh/post/using-sass-functions-to-access-complex-variable-maps
+ */
+/*
+get color of font icon
+ -- paramter: name of icon
+ -- return:color icon
+*/
 a {
   text-decoration: none; }
 
@@ -20,7 +30,7 @@ ul {
   text-decoration: none; }
 
 .fa-facebook {
-  background: #3B5998;
+  background: red;
   color: white; }
 
 .fa-twitter {
@@ -206,7 +216,7 @@ header {
   position: relative;
   height: 80vh;
   overflow: hidden;
-  background: url("../img/hero-bg-1.jpg");
+  background: url("../../img/hero-bg-1.jpg");
   background-size: cover; }
   .rev-slider-wrapper .dot-grid {
     background-image: radial-gradient(#007cf0 5%, transparent 0);
@@ -238,7 +248,7 @@ header {
       -webkit-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0); }
       .rev-slider-wrapper .intro__name--green {
-        color: #00ff5b; }
+        color: #28a745; }
     .rev-slider-wrapper .intro__text {
       font-size: 12px;
       font-weight: lighter; }
@@ -248,10 +258,10 @@ header {
       background: #8818f5;
       border: solid 1px;
       border-radius: 20px;
-      color: white;
       font-size: 12px;
       font-weight: bold;
       font-style: italic;
+      color: white;
       text-transform: uppercase; }
   .rev-slider-wrapper .btn {
     position: absolute;
@@ -278,6 +288,48 @@ header {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     /*!*flex-wrap: wrap;*!  2sibar auto xuống dòng*/ }
+
+/*********************************************************
+==========================================================
+ the responsive of page
+===========================================================
+ *********************************************************/
+@media only screen and (max-width: 800px) {
+  .container {
+    margin: 0 10%; }
+  .col-lg-8, .col-lg-6, .col-lg-4, .col-sm-6 {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%; }
+  .main-nav__list {
+    font-size: 10px; }
+  .nav-account {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 2px;
+    margin-left: 30px;
+    font-size: 8px; }
+  .site-content .container {
+    margin: 5%;
+    color: #dc3545; }
+  .post-grid__item {
+    width: 100%;
+    margin-bottom: 10px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .posts__title {
+    font-size: 15px; }
+  .row {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .sidebar {
+    margin-top: 40px; }
+  .widget {
+    width: 100%;
+    margin-bottom: 20px; } }
 
 /*********************************************************
 part1: the left
@@ -364,12 +416,13 @@ part1: the left
       font-size: 12px;
       font-weight: 300;
       font-style: italic;
+      color: inherit;
       text-transform: uppercase; }
     .posts .post-grid__item .posts__inner .posts__title {
       margin: 20px 0;
       font-size: 25px;
-      text-transform: uppercase;
-      font-style: italic; }
+      font-style: italic;
+      text-transform: uppercase; }
       .posts .post-grid__item .posts__inner .posts__title:hover {
         color: #ffc107; }
     .posts .post-grid__item .posts__inner .posts__excerpt {
@@ -419,12 +472,12 @@ part2: the right of body page
       justify-content: space-between;
       padding: 0 10px;
       font-size: 20px;
-      text-transform: uppercase;
       font-style: italic;
+      text-transform: uppercase;
       background: #403351; }
       .sidebar .widget__title::before {
         content: '';
-        background: #00ff5b;
+        background: #28a745;
         width: 6px;
         height: 100%;
         position: absolute;
@@ -437,18 +490,18 @@ part2: the right of body page
         padding: 4px 2px;
         border-radius: 20px;
         background: #8c8297;
-        color: white;
-        font-size: 9px; }
+        font-size: 9px;
+        color: white; }
     .sidebar .widget__content .table {
       width: 100%;
       border-collapse: collapse;
       background: #392D49; }
       .sidebar .widget__content .table__head {
-        color: #28a745;
-        margin: 10px;
-        border-top: solid 0.2px #4b3b60;
         font-size: 12px;
-        font-style: italic; }
+        font-style: italic;
+        color: white;
+        margin: 10px;
+        border-top: solid 0.2px #4b3b60; }
       .sidebar .widget__content .table__row {
         border-top: solid 0.1px #4b3b60;
         font-size: 11px; }
@@ -481,12 +534,12 @@ part2: the right of body page
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      color: white;
       background: url("../img/twitch-stream-1-bg.jpg") transparent;
       background-size: cover;
       background-color: #392D49;
       background-blend-mode: soft-light;
-      font-weight: bold; }
+      font-weight: bold;
+      color: white; }
       .sidebar .twitch .twitch__content .twitch-stream__feature {
         font-weight: 700;
         margin: 0; }
@@ -498,8 +551,8 @@ part2: the right of body page
         font-style: italic;
         text-transform: uppercase; }
       .sidebar .twitch .twitch__content .twitch-stream__info {
-        font-weight: 300;
-        font-size: 14px; }
+        font-size: 14px;
+        font-weight: 300; }
       .sidebar .twitch .twitch__content .twitch-stream__status {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -624,43 +677,6 @@ part1: the sponsors
  the responsive of page
 ===========================================================
  *********************************************************/
-@media only screen and (max-width: 800px) {
-  .container {
-    margin: 0 10%; }
-  .col-lg-8, .col-lg-6, .col-lg-4, .col-sm-6 {
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%; }
-  .main-nav__list {
-    font-size: 10px; }
-  .nav-account {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding: 2px;
-    margin-left: 30px;
-    font-size: 8px; }
-  .site-content .container {
-    margin: 5%;
-    color: red; }
-  .post-grid__item {
-    width: 100%;
-    margin-bottom: 10px;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
-  .posts__title {
-    font-size: 15px; }
-  .row {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
-  .sidebar {
-    margin-top: 40px; }
-  .widget {
-    width: 100%;
-    margin-bottom: 20px; } }
-
 /*********************************************************
 ==========================================================
 animation

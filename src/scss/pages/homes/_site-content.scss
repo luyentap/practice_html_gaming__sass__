@@ -1,0 +1,74 @@
+.site-content{
+  padding: 50px 0;
+
+  .row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /*!*flex-wrap: wrap;*!  2sibar auto xuống dòng*/
+  }
+
+}
+
+
+/*********************************************************
+==========================================================
+ the responsive of page
+===========================================================
+ *********************************************************/
+@media only screen and (max-width: 800px) {
+  .container{
+    margin:0 10%;
+  }
+  .col-lg-8,.col-lg-6,.col-lg-4,.col-sm-6{
+    flex-basis: 100%;
+    //display: block;
+  }
+
+
+  .main-nav__list{
+    font-size: 10px;
+  }
+  .nav-account{
+    flex-wrap: wrap;
+
+    padding: 2px;
+    margin-left: 30px;
+
+    font-size: 8px;
+  }
+  .site-content .container{
+    margin: 5%;
+    color:$red;
+  }
+
+  .post-grid__item{
+    width: 100%;
+    margin-bottom: 10px;
+
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .posts__title{
+    font-size: 15px;
+  }
+
+  .row{
+    justify-content: center;
+  }
+
+  .sidebar{
+    margin-top: 40px;
+  }
+  .widget{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+//@media only screen and (min-width: 600px) {
+//  .post-grid__item{
+//    width: 100%;
+//    margin: 0px;
+//  }
+//}

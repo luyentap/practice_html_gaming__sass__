@@ -1,0 +1,844 @@
+// div: header+slider: height 100vh
+div
+    header
+        .header__top-bar
+            .container
+                .header__top-bar-inner
+                    ul.social-links
+                        li.social-links__item
+                            a.social-links_link
+                                i.fa.fa-facebook
+                        li.social-links__item
+                            a.social-links_link
+                                i.fa.fa-youtube
+                        li.social-links__item
+                            a.social-links_link
+                                i.fa.fa-twitter
+                        li.social-links__item
+                            a.social-links_link
+                                i.fa.fa-instagram
+                        li.social-links__item
+                            a.social-links_link
+                                i.fa
+                    ul.nav-account
+                        li.nav-account__item
+                            | CURRENCY:
+                            span.nav-account__item--lighter USD
+                        li.nav-account__item
+                            | LANGUAGE:
+                            span.nav-account__item--lighter USA
+                        li.nav-account__item
+                            | ACCOUNT:
+                            span.nav-account__item--lighter LOGIN
+        .header__primary
+            .container
+                .header__primary-inner
+                    .header-logo
+                        a(href='index.html')
+                            img(src='img/alchemists-86x98.png')
+                    .main-nav
+                        ul.main-nav__list
+                            li
+                                a.main-nav__children(href='') HOME
+                            li
+                                a.main-nav__children(href='') TEAM
+                            li
+                                a.main-nav__children(href='') RESULT
+                            li
+                                a.main-nav__children(href='') RESULT
+                            li
+                                a.main-nav__children(href='') CALENDAR
+                    .header-search-home
+                        input(type='text', placeholder='Enter your search here')
+                        button.btn-search
+                            i.fa.fa-search
+    .rev-slider-wrapper.container
+        .dot-grid
+            img.rev-slider-wrapper__image(src='img/hero-character-1.png')
+            .intro
+                h6.intro__rank Feature Player
+                h1.intro__name
+                    | SARAH
+                    br
+                    span.intro__name--green  Valentine
+                p.intro__text she has the highest kill ratio of all season
+                button.intro__button Check the player bio &gt;
+            .btn
+                button.btn__left  &lt;
+                button.btn__right  &gt;
+.site-content
+    // contain all body of page
+    .container
+        // format align
+        .row
+            // contain content
+            .posts.col-lg-8
+                // contain left
+                .post-grid__item.col-sm-6
+                    // item
+                    .posts__thumb
+                        .posts__cat
+                            span.label.posts__cat-label.posts__cat-label--category-1.bg-green THE TEAM
+                            span.label.posts__cat-label.posts__cat-label--category-4.bg-yellow XENOWATCH
+                        img(src='img/post-img1.jpg')
+                    .posts__inner.card__content
+                        a.posts__cta.bg-yellow(href='')
+                        time.posts__date(datetime='2018-12-30') December 30th,2018
+                        h6.posts__title.posts__title--color-hover
+                            | The Alchemists reach to the Xenowatch
+                            | finals
+                        p.posts__excerpt
+                            | Lorem ipsum dolor sit amet, consectetur adipisi nela elit, sed do
+                            | eiusmod tempore der incididunt.
+                    footer.posts__footer.card__footer
+                        .post-author
+                            img(src='img/avatar-12-xs.jpg', alt='')
+                            p.post-author__info ERICK ROCKGERS
+                        ul.post__meta.meta
+                            li.meta__item.meta__item--views
+                                i.fa.fa-eye
+                                |                                 2369
+                            li.meta__item.meta__item--likes
+                                i.fa.fa-heart
+                                |                                 50
+                            li.meta__item.meta__item--comments
+                                i.fa.fa-comment
+                                |                                 20
+                .post-grid__item.col-sm-6
+                    // item
+                    .posts__thumb
+                        .posts__cat
+                            span.label.posts__cat-label.posts__cat-label--category-1.bg-purple THE TEAM
+                            span.label.posts__cat-label.posts__cat-label--category-4
+                        img(src='img/post-img2.jpg')
+                    .posts__inner.card__content
+                        a.posts__cta.bg-purple(href='')
+                        time.posts__date(datetime='2018-12-30') December 30th,2018
+                        h6.posts__title.posts__title--color-hover
+                            | The Alchemists reach to the Xenowatch
+                            | finals
+                        p.posts__excerpt
+                            | Lorem ipsum dolor sit amet, consectetur adipisi nela elit, sed do
+                            | eiusmod tempore der incididunt.
+                    footer.posts__footer.card__footer
+                        .post-author
+                            img.post-author__avatar(src='img/avatar-12-xs.jpg', alt='')
+                            p.post-author__info ERICK ROCKGERS
+                        ul.post__meta.meta
+                            li.meta__item.meta__item--views
+                                i.fa.fa-eye
+                                |                                 2369
+                            li.meta__item.meta__item--likes
+                                i.fa.fa-heart
+                                |                                 50
+                            li.meta__item.meta__item--comments
+                                i.fa.fa-comment
+                                |                                 20
+                .post-grid__item.col-sm-6
+                    // item
+                    .posts__thumb
+                        .posts__cat
+                            span.label.posts__cat-label.posts__cat-label--category-1.bg-green THE TEAM
+                            span.label.posts__cat-label.posts__cat-label--category-4.bg-yellow STRIKER GO
+                        img(src='img/post-img3.jpg')
+                    .posts__inner.card__content
+                        a.posts__cta.bg-red(href='')
+                        time.posts__date(datetime='2018-12-30') December 30th,2018
+                        h6.posts__title.posts__title--color-hover
+                            | The Alchemists reach to the Xenowatch
+                            | finals
+                        p.posts__excerpt
+                            | Lorem ipsum dolor sit amet, consectetur adipisi nela elit, sed do
+                            | eiusmod tempore der incididunt.
+                    footer.posts__footer.card__footer
+                        .post-author
+                            img.post-author__avatar(src='img/avatar-12-xs.jpg', alt='')
+                            p.post-author__info ERICK ROCKGERS
+                        ul.post__meta.meta
+                            li.meta__item.meta__item--views
+                                i.fa.fa-eye
+                                |                                 2369
+                            li.meta__item.meta__item--likes
+                                i.fa.fa-heart
+                                |                                 50
+                            li.meta__item.meta__item--comments
+                                i.fa.fa-comment
+                                |                                 20
+                .post-grid__item.col-sm-6
+                    // item
+                    .posts__thumb
+                        .posts__cat
+                            .label.posts__cat-label.posts__cat-label--category-1.bg-yellow XENOWATCH
+                            .label.posts__cat-label.posts__cat-label--category-4
+                        img(src='img/post-img4.jpg')
+                    .posts__inner.card__content
+                        a.posts__cta.bg-yellow(href='')
+                        time.posts__date(datetime='2018-12-30') December 30th,2018
+                        h6.posts__title.posts__title--color-hover
+                            | The Alchemists reach to the Xenowatch
+                            | finals
+                        p.posts__excerpt
+                            | Lorem ipsum dolor sit amet, consectetur adipisi nela elit, sed do
+                            | eiusmod tempore der incididunt.
+                    footer.posts__footer.card__footer
+                        .post-author
+                            img.post-author__avatar(src='img/avatar-12-xs.jpg', alt='')
+                            p.post-author__info ERICK ROCKGERS
+                        ul.post__meta.meta
+                            li.meta__item.meta__item--views
+                                i.fa.fa-eye
+                                |                                 2369
+                            li.meta__item.meta__item--likes
+                                i.fa.fa-heart
+                                |                                 50
+                            li.meta__item.meta__item--comments
+                                i.fa.fa-comment
+                                |                                 20
+                .post-grid__item.col-sm-6
+                    // item
+                    .posts__thumb
+                        .posts__cat
+                            .label.posts__cat-label.posts__cat-label--category-1.bg-green THE TEAM
+                            .label.posts__cat-label.posts__cat-label--category-4
+                        img(src='img/post-img6.jpg')
+                    .posts__inner.card__content
+                        a.posts__cta.bg-green(href='')
+                        time.posts__date(datetime='2018-12-30') December 30th,2018
+                        h6.posts__title.posts__title--color-hover
+                            | The Alchemists reach to the Xenowatch
+                            | finals
+                        p.posts__excerpt
+                            | Lorem ipsum dolor sit amet, consectetur adipisi nela elit, sed do
+                            | eiusmod tempore der incididunt.
+                    footer.posts__footer.card__footer
+                        .post-author
+                            img.post-author__avatar(src='img/avatar-12-xs.jpg', alt='')
+                            p.post-author__info ERICK ROCKGERS
+                        ul.post__meta.meta
+                            li.meta__item.meta__item--views
+                                i.fa.fa-eye
+                                |                                 2369
+                            li.meta__item.meta__item--likes
+                                i.fa.fa-heart
+                                |                                 50
+                            li.meta__item.meta__item--comments
+                                i.fa.fa-comment
+                                |                                 20
+                .post-grid__item.col-sm-6
+                    // item
+                    .posts__thumb
+                        .posts__cat
+                            .label.posts__cat-label.posts__cat-label--category-1.bg-red THE STRIKER GO
+                            .label.posts__cat-label.posts__cat-label--category-4
+                        img(src='img/post-img11-card-md.jpg')
+                    .posts__inner.card__content
+                        a.posts__cta.bg-red(href='')
+                        time.posts__date(datetime='2018-12-30') December 30th,2018
+                        h6.posts__title.posts__title--color-hover
+                            | The Alchemists reach to the Xenowatch
+                            | finals
+                        p.posts__excerpt
+                            | Lorem ipsum dolor sit amet, consectetur adipisi nela elit, sed do
+                            | eiusmod tempore der incididunt.
+                    footer.posts__footer.card__footer
+                        .post-author
+                            img.post-author__avatar(src='img/avatar-12-xs.jpg', alt='')
+                            p.post-author__info ERICK ROCKGERS
+                        ul.post__meta.meta
+                            li.meta__item.meta__item--views
+                                i.fa.fa-eye
+                                |                                 2369
+                            li.meta__item.meta__item--likes
+                                i.fa.fa-heart
+                                |                                 50
+                            li.meta__item.meta__item--comments
+                                i.fa.fa-comment
+                                |                                 20
+            // left content
+            .sidebar.col-lg-4
+                // right content
+                aside.widget
+                    .widget__title
+                        h4 L.O. Heroes Standings
+                        a.btn.widget__btn(href='') SEE ALL STARTS
+                    .widget__content
+                        table.table
+                            thead.table__head
+                                th TEAM POSITION
+                                th OVERALL RECORD
+                                th MATCH RECORD
+                            tr.table__row
+                                td.team-meta
+                                    span 01
+                                    img.team-meta__logo(src='img/pirates_shield.png', alt='')
+                                    div
+                                        p.team-meta__name L.A Privates
+                                        p.team-meta__place United States
+                                td 14-02
+                                td 28-14
+                            tr.table__row
+                                td.team-meta
+                                    span 01
+                                    img.team-meta__logo(src='img/pirates_shield.png', alt='')
+                                    div
+                                        p.team-meta__name L.A Privates
+                                        p.team-meta__place United States
+                                td 14-02
+                                td 28-14
+                            tr.table__row
+                                td.team-meta
+                                    span 01
+                                    img.team-meta__logo(src='img/pirates_shield.png', alt='')
+                                    div
+                                        p.team-meta__name L.A Privates
+                                        p.team-meta__place United States
+                                td 14-02
+                                td 28-14
+                            tr.table__row
+                                td.team-meta
+                                    span 01
+                                    img.team-meta__logo(src='img/pirates_shield.png', alt='')
+                                    div
+                                        p.team-meta__name L.A Privates
+                                        p.team-meta__place United States
+                                td 14-02
+                                td 28-14
+                            tr.table__row
+                                td.team-meta
+                                    span 01
+                                    img.team-meta__logo(src='img/pirates_shield.png', alt='')
+                                    div
+                                        p.team-meta__name L.A Privates
+                                        p.team-meta__place United States
+                                td 14-02
+                                td 28-14
+                            tr.table__row
+                                td.team-meta
+                                    span 01
+                                    img.team-meta__logo(src='img/pirates_shield.png', alt='')
+                                    div
+                                        p.team-meta__name L.A Privates
+                                        p.team-meta__place United States
+                                td 14-02
+                                td 28-14
+                // row1 : L.O. HEROES STANDINGS
+                aside.widget.twitch
+                    .widget__title
+                        h4 TOP TRENDING NEWS
+                        a.btn.widget__btn(href='') SEE ALL STARTS
+                    .twitch__content
+                        // item streaming
+                        a.twitch--has_video(href='')
+                            // streamming youtuber
+                            .twitch-stream
+                                .twitch-stream__img
+                                    img(src='img/twitch-streamer-1.png')
+                                .twitch-stream__body
+                                    h6.twitch-stream__feature
+                                        | FEATURE STREAM
+                                        i.fa.fa-star.cl-green
+                                        i.fa.fa-star.cl-green
+                                        i.fa.fa-star.cl-green
+                                        i.fa.fa-star.cl-green
+                                        i.fa.fa-star.cl-white
+                                    h5.twitch-stream__title Destroy Plays Xenowatch
+                                    .twitch-stream__info Joined by Kelly and Saki
+                                    .twitch-stream__status
+                                        span LIVE
+                                        .twitch-stream__status--online.bg-green
+                        a.twitch-stream-video(href='')
+                            // video stream
+                            img.twitch-stream-video__img(src='img/twitch-stream-cover.jpg')
+                            .arrow
+                    .twitch__content
+                        // item streaming
+                        a.twitch--has_video(href='')
+                            // streamming youtuber
+                            .twitch-stream
+                                .twitch-stream__img
+                                    img(src='img/twitch-streamer-2.png')
+                                .twitch-stream__body
+                                    h6.twitch-stream__feature
+                                        | FEATURE STREAM
+                                        i.fa.fa-star.cl-green
+                                        i.fa.fa-star.cl-green
+                                        i.fa.fa-star.cl-green
+                                        i.fa.fa-star.cl-green
+                                        i.fa.fa-star.cl-green
+                                    h5.twitch-stream__title Assassins League Gameplay
+                                    .twitch-stream__info We start the adventure mode!
+                                    .twitch-stream__status
+                                        span LIVE
+                                        .twitch-stream__status--online.bg-green
+                    .twitch__content
+                        // item streaming
+                        a.twitch--has_video(href='')
+                            // streamming youtuber
+                            .twitch-stream
+                                .twitch-stream__img
+                                    img(src='img/twitch-streamer-3.png')
+                                .twitch-stream__body
+                                    h6.twitch-stream__feature
+                                        | FEATURE STREAM
+                                        i.fa.fa-star.cl-green
+                                        i.fa.fa-star.cl-green
+                                        i.fa.fa-star.cl-green
+                                        i.fa.fa-star.cl-green
+                                        i.fa.fa-star.cl-white
+                                    h5.twitch-stream__title Destroy Plays Xenowatch
+                                    .twitch-stream__info Joined by Kelly and Saki
+                                    .twitch-stream__status
+                                        span OFF
+                                        .twitch-stream__status--online.bg-red
+                    .twitch__content
+                        // item streaming
+                        a.twitch--has_video(href='')
+                            // streamming youtuber
+                            .twitch-stream
+                                .twitch-stream__img
+                                    img(src='img/twitch-streamer-4.png')
+                                .twitch-stream__body
+                                    h6.twitch-stream__feature
+                                        | FEATURE STREAM
+                                        i.fa.fa-star.cl-green
+                                        i.fa.fa-star.cl-green
+                                        i.fa.fa-star.cl-green
+                                        i.fa.fa-star.cl-green
+                                        i.fa.fa-star.cl-white
+                                    h5.twitch-stream__title Destroy Plays Xenowatch
+                                    .twitch-stream__info Joined by Kelly and Saki
+                                    .twitch-stream__status
+                                        span LIVE
+                                        .twitch-stream__status--online.bg-green
+                // row2 : streaming
+                aside.widget.calendar
+                    .widget__title
+                        h4 EVENTS CALENDAR
+                        a.btn.widget__btn(href='') SEE ALL STARTS
+                    .widget__content
+                        .calendar__month
+                            span.calendar--prev  &lt;
+                            span.calendar__time  December
+                            span.calendar--next  &gt;
+                        table.table
+                            thead.table__head
+                                th MO
+                                th TU
+                                th WE
+                                th THU
+                                th FRI
+                                th SAT
+                                th SUN
+                            tbody
+                                tr.table__row
+                                    td
+                                        span.day.day--muted 28
+                                    td
+                                        span.day.day--muted 29
+                                    td
+                                        span.day.day--muted 30
+                                    td
+                                        span.day.day--muted 31
+                                    td
+                                        span.day 1
+                                    td
+                                        span.day 2
+                                    td
+                                        span.day 3
+                                tr.table__row
+                                    td
+                                        span.day 4
+                                    td
+                                        span.day 5
+                                    td
+                                        span.day 6
+                                    td
+                                        span.day 7
+                                    td
+                                        span.day 8
+                                    td
+                                        span.day.day--active.day--type-1.bg-green 9
+                                    td
+                                        span.day 10
+                                tr.table__row
+                                    td
+                                        span.day 11
+                                    td
+                                        span.day 12
+                                    td
+                                        span.day 13
+                                    td
+                                        span.day 14
+                                    td
+                                        span.day 15
+                                    td
+                                        span.day 16
+                                    td
+                                        span.day 17
+                                tr.table__row
+                                    td
+                                        span.day 18
+                                    td
+                                        span.day 19
+                                    td
+                                        span.day.day--active.day--type-4.bg-yellow 20
+                                    td
+                                        span.day 21
+                                    td
+                                        span.day 22
+                                    td
+                                        span.day 23
+                                    td
+                                        span.day 24
+                                tr.table__row
+                                    td
+                                        span.day 25
+                                    td
+                                        span.day 26
+                                    td
+                                        span.day 27
+                                    td
+                                        span.day 28
+                                    td
+                                        span.day 29
+                                    td
+                                        span.day 30
+                                    td
+                                        span.day.day--muted 1
+                // row3 : calendar
+// <div class="site-content"> &lt;!&ndash; contain all body of page &ndash;&gt;
+// <div class="container"> &lt;!&ndash; format align &ndash;&gt;
+// <div class="row">   &lt;!&ndash; contain content &ndash;&gt;
+// <div class="content col-lg-8">  &lt;!&ndash; contain left &ndash;&gt;
+// <div class="posts posts&#45;&#45;cards post-grid post-grid&#45;&#45;2cols row">
+// <div class="post-grid__item col-sm-6"> &lt;!&ndash; item &ndash;&gt;
+// <div class="posts__item posts__item&#45;&#45;card posts__item&#45;&#45;category-1 posts__item&#45;&#45;category-4 card">
+// <div class="posts__thumb">
+// <div class="posts__cat">
+// <div class="label posts__cat-label posts__cat-label&#45;&#45;category-1"></div>
+// <div class="label posts__cat-label posts__cat-label&#45;&#45;category-4"></div>
+// </div>
+// <img src="img/post-img1.jpg"/>
+// </div>
+// <div class="posts__inner card__content">
+// <a href="" class="posts__cta"></a>
+// <time datetime="2018-12-30" class="posts__date">December 30th,2018</time>
+// <h6 class="posts__title posts__title&#45;&#45;color-hover">The Alchemists reach to the Xenowatch finals</h6>
+// <p class="posts__excerpt">Lorem ipsum dolor sit amet, consectetur adipisi nela elit, sed do eiusmod tempore der incididunt.</p>
+// </div>
+// <footer class="posts__footer card__footer">
+// <div class="post-author">
+// <img class="post-author__avatar" src="img/avatar-12-xs.jpg" alt="">
+// <p class="post-author__info">ERICK ROCKGERS</p>
+// </div>
+// <ul class="post__meta meta">
+// <li class="meta__item meta__item&#45;&#45;views">
+// <i class="fa fa-eye"></i>
+// 2369
+// </li>
+// <li class="meta__item meta__item&#45;&#45;likes">
+// <i class="fa fa-heart"></i>
+// 50
+// </li>
+// <li class="meta__item meta__item&#45;&#45;comments">
+// <i class="fa fa-comment"></i>
+// 20
+// </li>
+// </ul>
+// </footer>
+// </div>
+// </div>
+// <div class="post-grid__item col-sm-6">
+// <div class="posts__item posts__item&#45;&#45;card posts__item&#45;&#45;category-1 posts__item&#45;&#45;category-4 card">
+// <div class="posts__thumb">
+// <div class="posts__cat">
+// <div class="label posts__cat-label posts__cat-label&#45;&#45;category-1"></div>
+// <div class="label posts__cat-label posts__cat-label&#45;&#45;category-4"></div>
+// </div>
+// <img src="img/post-img1.jpg"/>
+// </div>
+// <div class="posts__inner card__content">
+// <a href="" class="posts__cta"></a>
+// <time datetime="2018-12-30" class="posts__date">December 30th,2018</time>
+// <h6 class="posts__title posts__title&#45;&#45;color-hover">The Alchemists reach to the Xenowatch finals</h6>
+// <p class="posts__excerpt">Lorem ipsum dolor sit amet, consectetur adipisi nela elit, sed do eiusmod tempore der incididunt.</p>
+// </div>
+// <footer class="posts__footer card__footer">
+// <div class="post-author">
+// <img class="post-author__avatar" src="img/avatar-12-xs.jpg" alt="">
+// <p class="post-author__info">ERICK ROCKGERS</p>
+// </div>
+// <ul class="post__meta meta">
+// <li class="meta__item meta__item&#45;&#45;views">
+// <i class="fa fa-eye"></i>
+// 2369
+// </li>
+// <li class="meta__item meta__item&#45;&#45;likes">
+// <i class="fa fa-heart"></i>
+// 50
+// </li>
+// <li class="meta__item meta__item&#45;&#45;comments">
+// <i class="fa fa-comment"></i>
+// 20
+// </li>
+// </ul>
+// </footer>
+// </div>
+// </div>
+// <div class="post-grid__item col-sm-6">
+// <div class="posts__item posts__item&#45;&#45;card posts__item&#45;&#45;category-1 posts__item&#45;&#45;category-4 card">
+// <div class="posts__thumb">
+// <div class="posts__cat">
+// <div class="label posts__cat-label posts__cat-label&#45;&#45;category-1"></div>
+// <div class="label posts__cat-label posts__cat-label&#45;&#45;category-4"></div>
+// </div>
+// <img src="img/post-img1.jpg"/>
+// </div>
+// <div class="posts__inner card__content">
+// <a href="" class="posts__cta"></a>
+// <time datetime="2018-12-30" class="posts__date">December 30th,2018</time>
+// <h6 class="posts__title posts__title&#45;&#45;color-hover">The Alchemists reach to the Xenowatch finals</h6>
+// <p class="posts__excerpt">Lorem ipsum dolor sit amet, consectetur adipisi nela elit, sed do eiusmod tempore der incididunt.</p>
+// </div>
+// <footer class="posts__footer card__footer">
+// <div class="post-author">
+// <img class="post-author__avatar" src="img/avatar-12-xs.jpg" alt="">
+// <p class="post-author__info">ERICK ROCKGERS</p>
+// </div>
+// <ul class="post__meta meta">
+// <li class="meta__item meta__item&#45;&#45;views">
+// <i class="fa fa-eye"></i>
+// 2369
+// </li>
+// <li class="meta__item meta__item&#45;&#45;likes">
+// <i class="fa fa-heart"></i>
+// 50
+// </li>
+// <li class="meta__item meta__item&#45;&#45;comments">
+// <i class="fa fa-comment"></i>
+// 20
+// </li>
+// </ul>
+// </footer>
+// </div>
+// </div>
+// <div class="post-grid__item col-sm-6">
+// <div class="posts__item posts__item&#45;&#45;card posts__item&#45;&#45;category-1 posts__item&#45;&#45;category-4 card">
+// <div class="posts__thumb">
+// <div class="posts__cat">
+// <div class="label posts__cat-label posts__cat-label&#45;&#45;category-1"></div>
+// <div class="label posts__cat-label posts__cat-label&#45;&#45;category-4"></div>
+// </div>
+// <img src="img/post-img1.jpg"/>
+// </div>
+// <div class="posts__inner card__content">
+// <a href="" class="posts__cta"></a>
+// <time datetime="2018-12-30" class="posts__date">December 30th,2018</time>
+// <h6 class="posts__title posts__title&#45;&#45;color-hover">The Alchemists reach to the Xenowatch finals</h6>
+// <p class="posts__excerpt">Lorem ipsum dolor sit amet, consectetur adipisi nela elit, sed do eiusmod tempore der incididunt.</p>
+// </div>
+// <footer class="posts__footer card__footer">
+// <div class="post-author">
+// <img class="post-author__avatar" src="img/avatar-12-xs.jpg" alt="">
+// <p class="post-author__info">ERICK ROCKGERS</p>
+// </div>
+// <ul class="post__meta meta">
+// <li class="meta__item meta__item&#45;&#45;views">
+// <i class="fa fa-eye"></i>
+// 2369
+// </li>
+// <li class="meta__item meta__item&#45;&#45;likes">
+// <i class="fa fa-heart"></i>
+// 50
+// </li>
+// <li class="meta__item meta__item&#45;&#45;comments">
+// <i class="fa fa-comment"></i>
+// 20
+// </li>
+// </ul>
+// </footer>
+// </div>
+// </div>
+// <div class="post-grid__item col-sm-6">
+// <div class="posts__item posts__item&#45;&#45;card posts__item&#45;&#45;category-1 posts__item&#45;&#45;category-4 card">
+// <div class="posts__thumb">
+// <div class="posts__cat">
+// <div class="label posts__cat-label posts__cat-label&#45;&#45;category-1"></div>
+// <div class="label posts__cat-label posts__cat-label&#45;&#45;category-4"></div>
+// </div>
+// <img src="img/post-img1.jpg"/>
+// </div>
+// <div class="posts__inner card__content">
+// <a href="" class="posts__cta"></a>
+// <time datetime="2018-12-30" class="posts__date">December 30th,2018</time>
+// <h6 class="posts__title posts__title&#45;&#45;color-hover">The Alchemists reach to the Xenowatch finals</h6>
+// <p class="posts__excerpt">Lorem ipsum dolor sit amet, consectetur adipisi nela elit, sed do eiusmod tempore der incididunt.</p>
+// </div>
+// <footer class="posts__footer card__footer">
+// <div class="post-author">
+// <img class="post-author__avatar" src="img/avatar-12-xs.jpg" alt="">
+// <p class="post-author__info">ERICK ROCKGERS</p>
+// </div>
+// <ul class="post__meta meta">
+// <li class="meta__item meta__item&#45;&#45;views">
+// <i class="fa fa-eye"></i>
+// 2369
+// </li>
+// <li class="meta__item meta__item&#45;&#45;likes">
+// <i class="fa fa-heart"></i>
+// 50
+// </li>
+// <li class="meta__item meta__item&#45;&#45;comments">
+// <i class="fa fa-comment"></i>
+// 20
+// </li>
+// </ul>
+// </footer>
+// </div>
+// </div>
+// <div class="post-grid__item col-sm-6">
+// <div class="posts__item posts__item&#45;&#45;card posts__item&#45;&#45;category-1 posts__item&#45;&#45;category-4 card">
+// <div class="posts__thumb">
+// <div class="posts__cat">
+// <div class="label posts__cat-label posts__cat-label&#45;&#45;category-1"></div>
+// <div class="label posts__cat-label posts__cat-label&#45;&#45;category-4"></div>
+// </div>
+// <img src="img/post-img1.jpg"/>
+// </div>
+// <div class="posts__inner card__content">
+// <a href="" class="posts__cta"></a>
+// <time datetime="2018-12-30" class="posts__date">December 30th,2018</time>
+// <h6 class="posts__title posts__title&#45;&#45;color-hover">The Alchemists reach to the Xenowatch finals</h6>
+// <p class="posts__excerpt">Lorem ipsum dolor sit amet, consectetur adipisi nela elit, sed do eiusmod tempore der incididunt.</p>
+// </div>
+// <footer class="posts__footer card__footer">
+// <div class="post-author">
+// <img class="post-author__avatar" src="img/avatar-12-xs.jpg" alt="">
+// <p class="post-author__info">ERICK ROCKGERS</p>
+// </div>
+// <ul class="post__meta meta">
+// <li class="meta__item meta__item&#45;&#45;views">
+// <i class="fa fa-eye"></i>
+// 2369
+// </li>
+// <li class="meta__item meta__item&#45;&#45;likes">
+// <i class="fa fa-heart"></i>
+// 50
+// </li>
+// <li class="meta__item meta__item&#45;&#45;comments">
+// <i class="fa fa-comment"></i>
+// 20
+// </li>
+// </ul>
+// </footer>
+// </div>
+// </div>
+// <div class="post-grid__item col-sm-6">
+// <div class="posts__item posts__item&#45;&#45;card posts__item&#45;&#45;category-1 posts__item&#45;&#45;category-4 card">
+// <div class="posts__thumb">
+// <div class="posts__cat">
+// <div class="label posts__cat-label posts__cat-label&#45;&#45;category-1"></div>
+// <div class="label posts__cat-label posts__cat-label&#45;&#45;category-4"></div>
+// </div>
+// <img src="img/post-img1.jpg"/>
+// </div>
+// <div class="posts__inner card__content">
+// <a href="" class="posts__cta"></a>
+// <time datetime="2018-12-30" class="posts__date">December 30th,2018</time>
+// <h6 class="posts__title posts__title&#45;&#45;color-hover">The Alchemists reach to the Xenowatch finals</h6>
+// <p class="posts__excerpt">Lorem ipsum dolor sit amet, consectetur adipisi nela elit, sed do eiusmod tempore der incididunt.</p>
+// </div>
+// <footer class="posts__footer card__footer">
+// <div class="post-author">
+// <img class="post-author__avatar" src="img/avatar-12-xs.jpg" alt="">
+// <p class="post-author__info">ERICK ROCKGERS</p>
+// </div>
+// <ul class="post__meta meta">
+// <li class="meta__item meta__item&#45;&#45;views">
+// <i class="fa fa-eye"></i>
+// 2369
+// </li>
+// <li class="meta__item meta__item&#45;&#45;likes">
+// <i class="fa fa-heart"></i>
+// 50
+// </li>
+// <li class="meta__item meta__item&#45;&#45;comments">
+// <i class="fa fa-comment"></i>
+// 20
+// </li>
+// </ul>
+// </footer>
+// </div>
+// </div>
+// </div>
+// </div>
+// </div>
+// </div>
+// </div>
+footer.footer
+    .sponsors-wrapper
+        .cotainer
+            .sponsors
+                ul.sponsors__list
+                    li.sponsors__item
+                        a(href='')
+                            img(src='img/sponsor-darkgame.png', alt='')
+                    li.sponsors__item
+                        a(href='')
+                            img(src='img/sponsor-geniusgeek.png', alt='')
+                    li.sponsors__item
+                        a(href='')
+                            img(src='img/sponsor-ghostgames.png', alt='')
+                    li.sponsors__item
+                        a(href='')
+                            img(src='img/sponsor-gamechat.png', alt='')
+                    li.sponsors__item
+                        a(href='')
+                            img(src='img/sponsor-elitesound.png', alt='')
+                    li.sponsors__item
+                        a(href='')
+                            img(src='img/sponsor-dragonfire.png', alt='')
+    .footer__contact
+        .container
+            ul.contact
+                li.contact__item
+                    span.contact__icon
+                        i.fa.fa-facebook
+                    .contact__text
+                        p.contact__name
+                            | Facebook
+                        .contact__address
+                            | AlchemistGaming
+                li.contact__item
+                    span.contact__icon
+                        i.fa.fa-youtube
+                    .contact__text
+                        p.contact__name
+                            | Youtube
+                        .contact__address
+                            | AlchemistGaming
+                li.contact__item
+                    span.contact__icon
+                        i.fa.fa-instagram
+                    .contact__text
+                        p.contact__name
+                            | Instagram
+                        .contact__address
+                            | AlchemistGaming
+                li.contact__item
+                    span.contact__icon
+                        i.fa.fa-google
+                    .contact__text
+                        p.contact__name
+                            | Google
+                        .contact__address
+                            | AlchemistGaming
+                li.contact__item
+                    span.contact__icon
+                        i.fa.fa-facebook
+                    .contact__text
+                        p.contact__name
+                            | Facebook
+                        .contact__address
+                            | AlchemistGaming
+    // footer:social link to contact
