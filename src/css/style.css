@@ -302,7 +302,8 @@ part1: the left
       .posts .post-grid__item .posts__thumb img {
         width: 100%;
         height: 100%;
-        object: cover; }
+        object: cover;
+        z-index: -1; }
         .posts .post-grid__item .posts__thumb img:hover {
           -webkit-transform: scale(1.5);
           transform: scale(1.5);
@@ -311,7 +312,8 @@ part1: the left
       .posts .post-grid__item .posts__thumb .posts__cat {
         position: absolute;
         left: 10%;
-        top: 5%; }
+        top: 5%;
+        z-index: 1; }
         .posts .post-grid__item .posts__thumb .posts__cat .posts__cat-label {
           margin: 2px;
           padding: 4px 4px;
