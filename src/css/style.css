@@ -1,3 +1,4 @@
+@charset "UTF-8";
 a {
   text-decoration: none; }
 
@@ -5,6 +6,10 @@ ul {
   list-style: none;
   -webkit-padding-start: 0px;
   padding-inline-start: 0px; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
 /* Style all font awesome icons */
 .fa {
@@ -193,7 +198,7 @@ header {
           color: white; }
 
 /*********************************************************
-==========================================================
+=========================================== ===============
  the introduction--header
 ===========================================================
  *********************************************************/
@@ -268,10 +273,11 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-    justify-content: space-around; }
+    /*!*flex-wrap: wrap;*!  2sibar auto xuống dòng*/ }
 
 /*********************************************************
 part1: the left
@@ -302,7 +308,8 @@ part1: the left
       .posts .post-grid__item .posts__thumb img {
         width: 100%;
         height: 100%;
-        object: cover;
+        -o-object-fit: cover;
+        object-fit: cover;
         z-index: -1; }
         .posts .post-grid__item .posts__thumb img:hover {
           -webkit-transform: scale(1.5);
@@ -384,7 +391,9 @@ part1: the left
       .posts .post-grid__item .posts__footer .post__meta {
         display: -webkit-box;
         display: -ms-flexbox;
-        display: flex; }
+        display: flex;
+        font-size: 12px;
+        font-weight: 100; }
 
 /*********************************************************
 part2: the right of body page
@@ -616,9 +625,11 @@ part1: the sponsors
 ===========================================================
  *********************************************************/
 @media only screen and (max-width: 800px) {
+  .container {
+    margin: 0 10%; }
   .col-lg-8, .col-lg-6, .col-lg-4, .col-sm-6 {
-    width: 100%;
-    display: block; }
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%; }
   .main-nav__list {
     font-size: 10px; }
   .nav-account {
@@ -632,19 +643,23 @@ part1: the sponsors
     color: red; }
   .post-grid__item {
     width: 100%;
-    margin: 0px; }
+    margin-bottom: 10px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
   .posts__title {
     font-size: 15px; }
   .row {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
-  .post-grid__item {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; } }
+  .sidebar {
+    margin-top: 40px; }
+  .widget {
+    width: 100%;
+    margin-bottom: 20px; } }
 
 /*********************************************************
 ==========================================================

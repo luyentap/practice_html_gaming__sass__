@@ -12,6 +12,9 @@ ul {
   padding-inline-start: 0px;
 }
 
+* {
+  box-sizing: border-box;
+}
 /* Style all font awesome icons */
 .fa {
   padding: 5px;
@@ -223,7 +226,7 @@ header {
 }
 
 /*********************************************************
-==========================================================
+=========================================== ===============
  the introduction--header
 ===========================================================
  *********************************************************/
@@ -324,8 +327,9 @@ header {
 
   .row{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
+    flex-wrap: wrap;
+    /*!*flex-wrap: wrap;*!  2sibar auto xuống dòng*/
   }
 
 }
@@ -362,7 +366,7 @@ part1: the left
       img {
         width: 100%;
         height: 100%;
-        object: cover;
+        object-fit: cover;
         z-index: -1;
         &:hover{
           transform: scale(1.5);
@@ -486,6 +490,9 @@ part1: the left
       }
       .post__meta{
         display: flex;
+        font-size: 12px;
+        font-weight: 100;
+
         .meta__item--views{
 
         }
@@ -779,9 +786,12 @@ part1: the sponsors
 ===========================================================
  *********************************************************/
 @media only screen and (max-width: 800px) {
+  .container{
+    margin:0 10%;
+  }
   .col-lg-8,.col-lg-6,.col-lg-4,.col-sm-6{
-    width: 100%;
-    display: block;
+    flex-basis: 100%;
+    //display: block;
   }
 
 
@@ -803,8 +813,12 @@ part1: the sponsors
 
   .post-grid__item{
     width: 100%;
-    margin: 0px;
+    margin-bottom: 10px;
+
+    flex-wrap: wrap;
+    justify-content: center;
   }
+
   .posts__title{
     font-size: 15px;
   }
@@ -812,9 +826,13 @@ part1: the sponsors
   .row{
     justify-content: center;
   }
-  .post-grid__item{
-    flex-wrap: wrap;
-    justify-content: center;
+
+  .sidebar{
+    margin-top: 40px;
+  }
+  .widget{
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
 //@media only screen and (min-width: 600px) {
