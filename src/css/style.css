@@ -81,9 +81,7 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 66%;
-  flex: 0 0 66%;
+  width: 66%;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
@@ -91,9 +89,7 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 45%;
-  flex: 0 0 45%;
+  width: 45%;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
@@ -101,9 +97,7 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 34%;
-  flex: 0 0 34%;
+  width: 34%;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
@@ -118,43 +112,36 @@ html, body {
   font-family: 'Roboto Condensed', sans-serif;
   background: #2B2236; }
 
-/*********************************************************
-==========================================================
- the header
-===========================================================
- *********************************************************/
 header {
   margin-bottom: 20px; }
-  header .header__top-bar {
-    display: block; }
-    header .header__top-bar-inner {
+  header .header__top-bar-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    header .header__top-bar-inner .social-links {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between; }
-      header .header__top-bar-inner .social-links {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        padding: 0; }
-        header .header__top-bar-inner .social-links__item {
-          margin-right: 4px; }
-      header .header__top-bar-inner .nav-account {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-item-align: end;
-        align-self: end; }
-        header .header__top-bar-inner .nav-account__item {
-          margin-left: 10px;
-          font-size: 12px;
-          color: white; }
-          header .header__top-bar-inner .nav-account__item::after {
-            content: '|'; }
-          header .header__top-bar-inner .nav-account__item--lighter {
-            color: #00ff5b; }
+      padding: 0; }
+      header .header__top-bar-inner .social-links__item {
+        margin-right: 4px; }
+    header .header__top-bar-inner .nav-account {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-item-align: end;
+      align-self: end; }
+      header .header__top-bar-inner .nav-account__item {
+        margin-left: 10px;
+        font-size: 12px;
+        color: white; }
+        header .header__top-bar-inner .nav-account__item::after {
+          content: '|'; }
+        header .header__top-bar-inner .nav-account__item--lighter {
+          color: #00ff5b; }
   header .header__primary {
     background: #403351; }
     header .header__primary-inner {
@@ -185,9 +172,11 @@ header {
           justify-content: space-between;
           padding: 0; }
         header .header__primary-inner .main-nav__children {
-          color: white;
           font-weight: bold;
-          font-style: italic; }
+          font-style: italic;
+          color: white; }
+          header .header__primary-inner .main-nav__children--button {
+            color: white; }
       header .header__primary-inner .header-search-home {
         position: relative; }
         header .header__primary-inner .header-search-home input[type="text"] {
@@ -207,11 +196,6 @@ header {
           background: transparent;
           color: white; }
 
-/*********************************************************
-=========================================== ===============
- the introduction--header
-===========================================================
- *********************************************************/
 .rev-slider-wrapper {
   position: relative;
   height: 80vh;
@@ -272,69 +256,19 @@ header {
     .rev-slider-wrapper .btn__right {
       padding: 20px; }
 
-/*********************************************************
-==========================================================
- the body of page
-===========================================================
- *********************************************************/
 .site-content {
   padding: 50px 0; }
   .site-content .row {
+    border: solid 2px red;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
     justify-content: space-around;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
     /*!*flex-wrap: wrap;*!  2sibar auto xuống dòng*/ }
 
 /*********************************************************
-==========================================================
- the responsive of page
-===========================================================
- *********************************************************/
-@media only screen and (max-width: 800px) {
-  .container {
-    margin: 0 10%; }
-  .col-lg-8, .col-lg-6, .col-lg-4, .col-sm-6 {
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%; }
-  .main-nav__list {
-    font-size: 10px; }
-  .nav-account {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding: 2px;
-    margin-left: 30px;
-    font-size: 8px; }
-  .site-content .container {
-    margin: 5%;
-    color: #dc3545; }
-  .post-grid__item {
-    width: 100%;
-    margin-bottom: 10px;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
-  .posts__title {
-    font-size: 15px; }
-  .row {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
-  .sidebar {
-    margin-top: 40px; }
-  .widget {
-    width: 100%;
-    margin-bottom: 20px; } }
-
-/*********************************************************
-part1: the left
-  1.posts
-  2.
+part1: left sibar of the page,contain posts
 
  *********************************************************/
 .posts {
@@ -534,7 +468,7 @@ part2: the right of body page
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      background: url("../img/twitch-stream-1-bg.jpg") transparent;
+      background: url("../../../img/twitch-stream-1-bg.jpg") transparent;
       background-size: cover;
       background-color: #392D49;
       background-blend-mode: soft-light;
@@ -607,11 +541,6 @@ part2: the right of body page
       overflow: hidden;
       padding: 8px; }
 
-/*********************************************************
-==========================================================
- the footer of page
-===========================================================
- *********************************************************/
 .footer {
   /*********************************************************
 part1: the sponsors
@@ -674,14 +603,99 @@ part1: the sponsors
 
 /*********************************************************
 ==========================================================
- the responsive of page
+ the responsive of page:
 ===========================================================
  *********************************************************/
-/*********************************************************
-==========================================================
-animation
-===========================================================
- *********************************************************/
+@media only screen and (min-width: 400px) {
+  .container {
+    margin: 0 10%; }
+  .header__top-bar {
+    visibility: hidden; }
+  .nav-account {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 2px;
+    margin-left: 30px;
+    font-size: 8px; }
+  .main-nav__list {
+    display: none;
+    font-size: 10px; }
+  .main-nav__children {
+    display: none;
+    font-size: 10px; }
+  .main-nav__children--button {
+    display: block; }
+  .main-nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .main-nav__list:hover .main-nav__children {
+    display: block; }
+  .row {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .posts {
+    width: 100%;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+  .sidebar {
+    width: 100%; }
+  .post-grid__item {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    margin-bottom: 10px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .posts__title {
+    font-size: 15px; }
+  .row {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .sidebar {
+    margin-top: 40px; }
+  .widget {
+    width: 100%;
+    margin-bottom: 20px; } }
+
+@media only screen and (min-width: 800px) {
+  .header__top-bar {
+    visibility: visible; }
+  .main-nav__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    visibility: visible;
+    font-size: 14px; }
+  .main-nav__children {
+    display: block;
+    font-size: 14px; }
+  .main-nav__children--button {
+    display: none; }
+  .post-grid__item {
+    -ms-flex-preferred-size: 45%;
+    flex-basis: 45%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; } }
+
+@media only screen and (min-width: 1000px) {
+  .container {
+    margin: 0 5%; }
+  .posts {
+    width: 66%;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+  .sidebar {
+    width: 34%; } }
+
 @-webkit-keyframes type {
   0% {
     width: 0; }
@@ -689,6 +703,7 @@ animation
     width: 40%; }
   100% {
     width: 0; } }
+
 @keyframes type {
   0% {
     width: 0; }

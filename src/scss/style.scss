@@ -10,65 +10,268 @@
 // ==========================================================================
 @import 'base/base';
 
-/*********************************************************
-==========================================================
- the header
-===========================================================
- *********************************************************/
+// ==========================================================================
+// the header
+// ==========================================================================
 @import "modules/header";
 
-/*********************************************************
-=========================================== ===============
- the introduction--header
-===========================================================
- *********************************************************/
-
+//=========================================== ===============
+// the introduction--header
+//===========================================================
 //.rev_slider_wrapper container
 @import "modules/slider";
 
-/*********************************************************
-==========================================================
- the body of page
-===========================================================
- *********************************************************/
+//==========================================================
+ //all page page
+//===========================================================
 @import "pages/homes/site-content";
-/*********************************************************
-part1: the left
-  1.posts
-  2.
-
- *********************************************************/
 @import "pages/homes/posts";
-/*********************************************************
-part2: the right of body page
-  1.widget :table result
-  2.twitch streaming online
-  3.event calendar
-
- *********************************************************/
 @import "pages/homes/side-bar";
-/*********************************************************
-==========================================================
- the footer of page
-===========================================================
- *********************************************************/
+
+//============================================================
+// the footer of page
+//============================================================
 @import "modules/footer";
 
 
-/*********************************************************
-==========================================================
- the responsive of page
-===========================================================
- *********************************************************/
-
+//============================================================
+//the responsive of page
+//============================================================
 //@import
 
-
 /*********************************************************
 ==========================================================
-animation
+ the responsive of page:
 ===========================================================
  *********************************************************/
+@media only screen and (min-width: 400px) {
+  //container
+  .container {
+    margin: 0 10%;
+  }
+
+  //header
+  .header__top-bar{
+    //display: none !important;
+    visibility: hidden;
+  }
+
+  .nav-account {
+    flex-wrap: wrap;
+
+    padding: 2px;
+    margin-left: 30px;
+
+    font-size: 8px;
+  }
+
+
+
+  .main-nav__list {
+    display: none;
+    font-size: 10px;
+  }
+  .main-nav__children{
+    display: none;
+
+    //@extend .header__top-bar;
+    font-size: 10px;
+  }
+
+  .main-nav__children--button{
+    display: block;
+    //color:red !important; ;
+
+  }
+  .main-nav__list{
+    display: flex;
+    flex-direction: column;
+  }
+  .main-nav__list:hover .main-nav__children{
+    display: block;
+
+    //flex-direction: row;
+  }
+
+
+
+    //body: post and navbar
+  .row {
+    width: 100%;
+    flex-wrap: wrap; //down to the line
+  }
+  .posts {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .sidebar {
+    width: 100%;
+  }
+
+  .post-grid__item {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+
+    //flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .posts__title {
+    font-size: 15px;
+  }
+
+  .row {
+    justify-content: center;
+  }
+
+  .sidebar {
+    margin-top: 40px;
+  }
+  .widget {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+
+  .header__top-bar{
+    visibility: visible;
+  }
+
+  .main-nav__list{
+    flex-direction: row;
+    visibility: visible;
+    //@extend .header__top-bar;
+    font-size: 14px;
+  }
+  .main-nav__children{
+    display: block;
+    //@extend .header__top-bar;
+    font-size: 14px;
+
+  }
+  .main-nav__children--button{
+    display: none;
+
+  }
+
+
+  .post-grid__item {
+    flex-basis: 45%;
+    justify-content: center;
+
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  //conainer
+  .container {
+    margin: 0 5%;
+  }
+
+  //todo: header:
+  //body: post and nav
+  .posts {
+    width: 66%;
+    justify-content: space-around;
+  }
+  .sidebar {
+    width: 34%;
+  }
+
+}
+
+//@media only screen and (max-width: 1024px) {
+//  .container {
+//    margin: 0 10%;
+//  }
+//  .row {
+//    //flex-basis: 100%;
+//    width: 100%;
+//    flex-wrap: wrap;
+//  }
+//  .posts {
+//    //flex-basis: 60%;
+//    width: 100%;
+//    justify-content: space-around;
+//  }
+//  .sidebar {
+//    width: 100%;
+//    //flex-basis: 40%;
+//  }
+//
+//}
+//
+//@media only screen and (max-width: 800px) {
+//  .container {
+//    margin: 0 10%;
+//  }
+//  .row {
+//    width: 100%;
+//    //flex-basis: 100%;
+//  }
+//  .posts {
+//    //width: 60%;
+//    //flex-basis: 60%;
+//    justify-content: space-around;
+//  }
+//  .sidebar {
+//    //width: 40%;
+//    //flex-basis: 40%;
+//  }
+//
+//  .main-nav__list {
+//    font-size: 10px;
+//  }
+//  .nav-account {
+//    flex-wrap: wrap;
+//
+//    padding: 2px;
+//    margin-left: 30px;
+//
+//    font-size: 8px;
+//  }
+//  .site-content .container {
+//    margin: 5%;
+//    color: $red;
+//  }
+//
+//  .post-grid__item {
+//    flex-basis: 100%;
+//    margin-bottom: 10px;
+//
+//    //flex-wrap: wrap;
+//    justify-content: center;
+//  }
+//
+//  .posts__title {
+//    font-size: 15px;
+//  }
+//
+//  .row {
+//    justify-content: center;
+//  }
+//
+//  .sidebar {
+//    margin-top: 40px;
+//  }
+//  .widget {
+//    width: 100%;
+//    margin-bottom: 20px;
+//  }
+//}
+
+//@media only screen and (min-width: 600px) {
+//  .post-grid__item{
+//    width: 100%;
+//    margin: 0px;
+//  }
+//}
+
+// ==========================================================
+ //animation
+//===========================================================
 @import "base/animations";
 
 

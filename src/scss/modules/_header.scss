@@ -2,7 +2,7 @@
 header {
   margin-bottom: 20px;
   .header__top-bar{
-    display: block;
+    //display: block;
 
     &-inner{
       display: flex;
@@ -60,12 +60,16 @@ header {
           display: flex;
           justify-content: space-between;
           padding:0 ;
-
         }
         &__children{
-          color:white;
-          font-weight: bold;
-          font-style: italic;
+          @include font($weight:bold,$color:white,$style:italic);
+          //color:white;
+          //font-weight: bold;
+          //font-style: italic;
+          &--button{
+            //display: none;
+            color:white;
+          }
         }
       }
       .header-search-home {
