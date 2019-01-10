@@ -1,3 +1,12 @@
+doctype html
+head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
+    meta(http-equiv='X-UA-Compatible' content='ie=edge')
+    title Document
+    link(href='css/style.css' rel='stylesheet' type='text/css')
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet')
 // div: header+slider: height 100vh
 div
     header
@@ -39,6 +48,9 @@ div
                     .main-nav
                         ul.main-nav__list
                             li
+                                a.main-nav__children--button(href='')
+                                    i.fa.fa-bars
+                            li
                                 a.main-nav__children(href='') HOME
                             li
                                 a.main-nav__children(href='') TEAM
@@ -49,7 +61,7 @@ div
                             li
                                 a.main-nav__children(href='') CALENDAR
                     .header-search-home
-                        input(type='text', placeholder='Enter your search here')
+                        input(type='text' placeholder='Enter your search here')
                         button.btn-search
                             i.fa.fa-search
     .rev-slider-wrapper.container
@@ -92,7 +104,7 @@ div
                             | eiusmod tempore der incididunt.
                     footer.posts__footer.card__footer
                         .post-author
-                            img(src='img/avatar-12-xs.jpg', alt='')
+                            img(src='img/avatar-12-xs.jpg' alt='')
                             p.post-author__info ERICK ROCKGERS
                         ul.post__meta.meta
                             li.meta__item.meta__item--views
@@ -122,7 +134,7 @@ div
                             | eiusmod tempore der incididunt.
                     footer.posts__footer.card__footer
                         .post-author
-                            img.post-author__avatar(src='img/avatar-12-xs.jpg', alt='')
+                            img.post-author__avatar(src='img/avatar-12-xs.jpg' alt='')
                             p.post-author__info ERICK ROCKGERS
                         ul.post__meta.meta
                             li.meta__item.meta__item--views
@@ -152,7 +164,7 @@ div
                             | eiusmod tempore der incididunt.
                     footer.posts__footer.card__footer
                         .post-author
-                            img.post-author__avatar(src='img/avatar-12-xs.jpg', alt='')
+                            img.post-author__avatar(src='img/avatar-12-xs.jpg' alt='')
                             p.post-author__info ERICK ROCKGERS
                         ul.post__meta.meta
                             li.meta__item.meta__item--views
@@ -182,7 +194,7 @@ div
                             | eiusmod tempore der incididunt.
                     footer.posts__footer.card__footer
                         .post-author
-                            img.post-author__avatar(src='img/avatar-12-xs.jpg', alt='')
+                            img.post-author__avatar(src='img/avatar-12-xs.jpg' alt='')
                             p.post-author__info ERICK ROCKGERS
                         ul.post__meta.meta
                             li.meta__item.meta__item--views
@@ -212,7 +224,7 @@ div
                             | eiusmod tempore der incididunt.
                     footer.posts__footer.card__footer
                         .post-author
-                            img.post-author__avatar(src='img/avatar-12-xs.jpg', alt='')
+                            img.post-author__avatar(src='img/avatar-12-xs.jpg' alt='')
                             p.post-author__info ERICK ROCKGERS
                         ul.post__meta.meta
                             li.meta__item.meta__item--views
@@ -242,7 +254,7 @@ div
                             | eiusmod tempore der incididunt.
                     footer.posts__footer.card__footer
                         .post-author
-                            img.post-author__avatar(src='img/avatar-12-xs.jpg', alt='')
+                            img.post-author__avatar(src='img/avatar-12-xs.jpg' alt='')
                             p.post-author__info ERICK ROCKGERS
                         ul.post__meta.meta
                             li.meta__item.meta__item--views
@@ -270,7 +282,7 @@ div
                             tr.table__row
                                 td.team-meta
                                     span 01
-                                    img.team-meta__logo(src='img/pirates_shield.png', alt='')
+                                    img.team-meta__logo(src='img/pirates_shield.png' alt='')
                                     div
                                         p.team-meta__name L.A Privates
                                         p.team-meta__place United States
@@ -279,7 +291,7 @@ div
                             tr.table__row
                                 td.team-meta
                                     span 01
-                                    img.team-meta__logo(src='img/pirates_shield.png', alt='')
+                                    img.team-meta__logo(src='img/pirates_shield.png' alt='')
                                     div
                                         p.team-meta__name L.A Privates
                                         p.team-meta__place United States
@@ -288,7 +300,7 @@ div
                             tr.table__row
                                 td.team-meta
                                     span 01
-                                    img.team-meta__logo(src='img/pirates_shield.png', alt='')
+                                    img.team-meta__logo(src='img/pirates_shield.png' alt='')
                                     div
                                         p.team-meta__name L.A Privates
                                         p.team-meta__place United States
@@ -297,7 +309,7 @@ div
                             tr.table__row
                                 td.team-meta
                                     span 01
-                                    img.team-meta__logo(src='img/pirates_shield.png', alt='')
+                                    img.team-meta__logo(src='img/pirates_shield.png' alt='')
                                     div
                                         p.team-meta__name L.A Privates
                                         p.team-meta__place United States
@@ -306,7 +318,7 @@ div
                             tr.table__row
                                 td.team-meta
                                     span 01
-                                    img.team-meta__logo(src='img/pirates_shield.png', alt='')
+                                    img.team-meta__logo(src='img/pirates_shield.png' alt='')
                                     div
                                         p.team-meta__name L.A Privates
                                         p.team-meta__place United States
@@ -315,7 +327,7 @@ div
                             tr.table__row
                                 td.team-meta
                                     span 01
-                                    img.team-meta__logo(src='img/pirates_shield.png', alt='')
+                                    img.team-meta__logo(src='img/pirates_shield.png' alt='')
                                     div
                                         p.team-meta__name L.A Privates
                                         p.team-meta__place United States
@@ -782,22 +794,22 @@ footer.footer
                 ul.sponsors__list
                     li.sponsors__item
                         a(href='')
-                            img(src='img/sponsor-darkgame.png', alt='')
+                            img(src='img/sponsor-darkgame.png' alt='')
                     li.sponsors__item
                         a(href='')
-                            img(src='img/sponsor-geniusgeek.png', alt='')
+                            img(src='img/sponsor-geniusgeek.png' alt='')
                     li.sponsors__item
                         a(href='')
-                            img(src='img/sponsor-ghostgames.png', alt='')
+                            img(src='img/sponsor-ghostgames.png' alt='')
                     li.sponsors__item
                         a(href='')
-                            img(src='img/sponsor-gamechat.png', alt='')
+                            img(src='img/sponsor-gamechat.png' alt='')
                     li.sponsors__item
                         a(href='')
-                            img(src='img/sponsor-elitesound.png', alt='')
+                            img(src='img/sponsor-elitesound.png' alt='')
                     li.sponsors__item
                         a(href='')
-                            img(src='img/sponsor-dragonfire.png', alt='')
+                            img(src='img/sponsor-dragonfire.png' alt='')
     .footer__contact
         .container
             ul.contact
@@ -842,3 +854,5 @@ footer.footer
                         .contact__address
                             | AlchemistGaming
     // footer:social link to contact
+// convert html  pug
+// https://pughtml.com/

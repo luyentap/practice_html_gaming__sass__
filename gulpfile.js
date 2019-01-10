@@ -1,6 +1,7 @@
 const gulp         = require('gulp');
 const browserSync  = require('browser-sync').create();
 const sass         = require('gulp-sass');
+const pug = require('gulp-pug');
 const autoprefixer = require('gulp-autoprefixer');
 
 // Compile Sass & Inject Into Browser
@@ -27,6 +28,14 @@ gulp.task('serve', ['sass'], function() {
 });
 
 
+
+gulp.task('views', function buildHTML() {
+    return gulp.src('src/*.pug')
+        .pipe(pug({
+            // Your options in here.
+        }))
+        .pipe(gulp.dest("src/"))
+});
 
 // Default Task
 gulp.task('default', ['serve']);
