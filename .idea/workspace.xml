@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59f6852e-7060-447d-8429-a19a2e5a8409" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/base/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/base/_base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/utilities/_fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/utilities/_fonts.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -211,7 +208,7 @@
         <entry file="file://$PROJECT_DIR$/src/scss/base/_base.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="22">
-              <caret line="85" column="30" lean-forward="true" selection-start-line="85" selection-start-column="30" selection-end-line="108" />
+              <caret line="85" column="32" lean-forward="true" selection-start-line="85" selection-start-column="32" selection-end-line="108" />
             </state>
           </provider>
         </entry>
@@ -574,12 +571,12 @@
       <workItem from="1547082712473" duration="10982000" />
       <workItem from="1547108197020" duration="838000" />
       <workItem from="1547109307278" duration="1013000" />
-      <workItem from="1547110374975" duration="497000" />
+      <workItem from="1547110374975" duration="529000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123827000" />
+    <option name="totallyTimeSpent" value="123859000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -818,7 +815,7 @@
     <entry file="file://$PROJECT_DIR$/src/scss/base/_base.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
-          <caret line="85" column="30" lean-forward="true" selection-start-line="85" selection-start-column="30" selection-end-line="108" />
+          <caret line="85" column="32" lean-forward="true" selection-start-line="85" selection-start-column="32" selection-end-line="108" />
         </state>
       </provider>
     </entry>
