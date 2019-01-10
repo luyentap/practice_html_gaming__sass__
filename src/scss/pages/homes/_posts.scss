@@ -4,20 +4,45 @@ part1: left sibar of the page,contain posts
  *********************************************************/
 .posts {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
   overflow: hidden;
 
   color: white;
+
+  @media only screen and (min-width: 400px) {
+    //width: 100%;
+    //justify-content: space-around;
+  }
+  @media only screen and (min-width: 800px) {
+  }
+  @media only screen and (min-width: 1000px) {
+    width: 66%;
+    justify-content: space-around;
+  }
+
   .post-grid__item {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding: 10px;
     //height: 100vh;
     overflow: hidden;
 
     background: #392D49;
-
     border-radius: 20px;
+
+    @media only screen and (min-width: 400px) {
+      //flex-basis: 100%;
+      //flex-wrap: wrap;
+      justify-content: center;
+    }
+    @media only screen and (min-width: 800px) {
+      flex-basis: 45%;
+      justify-content: center
+    }
+    @media only screen and (min-width: 1000px) {
+    }
 
     .posts__thumb {
       height: 50vh;
@@ -29,7 +54,7 @@ part1: left sibar of the page,contain posts
         height: 100%;
         object-fit: cover;
         z-index: -1;
-        &:hover{
+        &:hover {
           transform: scale(1.5);
           transition: 4s;
         }
@@ -42,7 +67,7 @@ part1: left sibar of the page,contain posts
         .posts__cat-label {
           margin: 2px;
           padding: 4px 4px;
-          transform: skewX(-20deg) ;
+          transform: skewX(-20deg);
           display: block;
 
           font-size: 10px;
@@ -58,81 +83,87 @@ part1: left sibar of the page,contain posts
 
     }
 
-    .posts__inner{
-      a{
+    .posts__inner {
+      a {
         border-radius: 50%;
         height: 50px;
         width: 50px;
         padding: 10px;
         position: absolute;
         right: 10%;
-        transform:translateY(-50%);
+        transform: translateY(-50%);
 
         //background: yellow;
 
-        &::after{
+        &::after {
           content: '';
 
           height: 20px;
-          background:white;
+          background: white;
           z-index: 999;
           padding: 2px;
 
           position: absolute;
           left: 50%;
-          top:50%;
-          transform: translate(-50%,-50%);
+          top: 50%;
+          transform: translate(-50%, -50%);
         }
-        &::before{
+        &::before {
           content: '';
 
           width: 20px;
-          background:white;
+          background: white;
           z-index: 999;
           padding: 2px;
 
           position: absolute;
           left: 50%;
-          top:50%;
-          transform: translate(-50%,-50%);
+          top: 50%;
+          transform: translate(-50%, -50%);
         }
-        &:hover::before{
+        &:hover::before {
 
         }
-        &:hover::after{
-
+        &:hover::after {
 
         }
       }
-      .posts__date{
-        @include font(12px,300,inherit,italic);
+      .posts__date {
+        @include font(12px, 300, inherit, italic);
         //font-size:12px;
         //font-weight: 300;
         //font-style: italic;
         text-transform: uppercase;
       }
 
-      .posts__title{
-        margin:20px 0;
+      .posts__title {
+        margin: 20px 0;
 
-        @include font($size:25px,$style:italic);
-        //font-size: 25px;
-        //font-style: italic;
+        @include font($size: 15px, $style: italic);
         text-transform: uppercase;
 
-        &:hover{
+        @media only screen and (min-width: 400px) {
+          //font-size: 15px;
+        }
+        @media only screen and (min-width: 800px) {
+          font-size: 25px;
+        }
+        @media only screen and (min-width: 1000px) {
+        }
+        &:hover {
           color: #ffc107;
         }
       }
-      .posts__excerpt{
-        @include  font($size:15px,$weight:100);
+      .posts__excerpt {
+        @include font($size: 15px, $weight: 100);
         //font-size: 15px;
         //font-weight: 100;
       }
     }
 
-    .posts__footer{
+    .posts__footer {
       display: flex;
+      justify-content: space-around;
       width: 100%;
       padding-top: 40px;
 
@@ -140,29 +171,29 @@ part1: left sibar of the page,contain posts
 
       font-weight: lighter;
 
-      .post-author{
-        &__avatar{
+      .post-author {
+        &__avatar {
           border-radius: 50%;
 
         }
-        &__info{
+        &__info {
           display: inline;
           font-size: 12px;
         }
       }
-      .post__meta{
+      .post__meta {
         display: flex;
-        @include  font($size:12px,$weight:100);
+        @include font($size: 12px, $weight: 100);
         //font-size: 12px;
         //font-weight: 100;
 
-        .meta__item--views{
+        .meta__item--views {
 
         }
-        .meta__item--likes{
+        .meta__item--likes {
 
         }
-        .meta__item--comments{
+        .meta__item--comments {
 
         }
       }

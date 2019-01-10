@@ -1,15 +1,23 @@
-
 header {
   margin-bottom: 20px;
-  .header__top-bar{
+  .header__top-bar {
     //display: block;
+    @media only screen and (min-width: 400px) {
+      //display: none !important;
+      visibility: hidden;
+    }
+    @media only screen and (min-width: 800px) {
+      visibility: visible;
 
-    &-inner{
+    }
+    @media only screen and (min-width: 1000px) {
+    }
+
+    &-inner {
       display: flex;
       justify-content: space-between;
 
-
-      .social-links{
+      .social-links {
         display: flex;
         padding: 0;
 
@@ -18,20 +26,34 @@ header {
         }
       }
 
-      .nav-account{
+      .nav-account {
         display: flex;
         align-self: end;
 
-        &__item{
+        @media only screen and (min-width: 400px) {
+          flex-wrap: wrap;
+
+          padding: 2px;
+          margin-left: 30px;
+
+          font-size: 8px;
+        }
+        @media only screen and (min-width: 800px) {
+
+        }
+        @media only screen and (min-width: 1000px) {
+        }
+
+        &__item {
           margin-left: 10px;
 
           font-size: 12px;
           color: white;
-          &::after{
+          &::after {
             content: '|';
           }
-          &--lighter{
-            color:#00ff5b;
+          &--lighter {
+            color: #00ff5b;
           }
         }
       }
@@ -39,7 +61,7 @@ header {
 
   }
 
-  .header__primary{
+  .header__primary {
     background: $purple-lighter;
     &-inner {
       display: flex;
@@ -59,22 +81,61 @@ header {
         &__list {
           display: flex;
           justify-content: space-between;
-          padding:0 ;
+          flex-direction: column;
+          padding: 0;
+          font-size: 10px;
+
+
+          //@media only screen and (min-width: 400px) {
+          //  display: flex;
+          //}
+          @media only screen and (min-width: 800px) {
+            flex-direction: row;
+            visibility: visible;
+            font-size: 14px;
+          }
+          @media only screen and (min-width: 1000px) {
+          }
+          &:hover .main-nav__children {
+            @media only screen and (min-width: 400px) {
+              display: block;
+            }
+          }
         }
-        &__children{
-          @include font($weight:bold,$color:white,$style:italic);
-          //color:white;
-          //font-weight: bold;
-          //font-style: italic;
-          &--button{
-            //display: none;
-            color:white;
+        .main-nav__children {
+          @include font($size:10px,$weight: bold, $color: white, $style: italic);
+          padding: 5px 0;
+          display: none;
+
+
+          @media only screen and (min-width: 400px) {
+
+          }
+          @media only screen and (min-width: 800px) {
+            flex-direction: row;
+            display: block;
+            font-size: 14px;
+          }
+          @media only screen and (min-width: 1000px) {
+          }
+
+          &--button {
+            display: block;
+            color: white;
+            @media only screen and (min-width: 400px) {
+              //color:red !important; ;
+            }
+            @media only screen and (min-width: 800px) {
+              display: none;
+            }
+            @media only screen and (min-width: 1000px) {
+            }
           }
         }
       }
       .header-search-home {
         position: relative;
-        input[type="text"]{
+        input[type="text"] {
           height: 38px;
           padding: 0 4px;
 
@@ -82,14 +143,14 @@ header {
           border-radius: 20px;
 
           background: #362b45;
-          color:white;
+          color: white;
 
         }
-        .btn-search{
+        .btn-search {
           position: absolute;
-          top:50%;
-          right:0;
-          transform: translate(0,-50%);
+          top: 50%;
+          right: 0;
+          transform: translate(0, -50%);
 
           border: solid 1px transparent;
           background: transparent;

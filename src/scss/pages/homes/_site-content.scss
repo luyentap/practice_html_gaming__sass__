@@ -2,10 +2,22 @@
   padding: 50px 0;
 
   .row {
-    border: solid 2px red;
     display: flex;
     justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap; //down to the line
+
+    border: solid 2px red;
     /*!*flex-wrap: wrap;*!  2sibar auto xuống dòng*/
+    @media only screen and (min-width: 400px) {
+      //width: 100%;
+      //flex-wrap: wrap; //down to the line
+      //justify-content: center;
+    }
+    @media only screen and (min-width: 800px) {
+    }
+    @media only screen and (min-width: 1000px) {
+    }
   }
 
 }
