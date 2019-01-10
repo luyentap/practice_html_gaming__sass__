@@ -2,15 +2,15 @@ header {
   margin-bottom: 20px;
   .header__top-bar {
     //display: block;
-    @media only screen and (min-width: 400px) {
+    @media only screen and (min-width: $screen-mobile) {
       //display: none !important;
       visibility: hidden;
     }
-    @media only screen and (min-width: 800px) {
+    @media only screen and (min-width: $screen-tablet) {
       visibility: visible;
 
     }
-    @media only screen and (min-width: 1000px) {
+    @media only screen and (min-width: $screen-pc) {
     }
 
     &-inner {
@@ -30,7 +30,7 @@ header {
         display: flex;
         align-self: end;
 
-        @media only screen and (min-width: 400px) {
+        @media only screen and (min-width: $screen-mobile) {
           flex-wrap: wrap;
 
           padding: 2px;
@@ -38,10 +38,10 @@ header {
 
           font-size: 8px;
         }
-        @media only screen and (min-width: 800px) {
+        @media only screen and (min-width: $screen-tablet) {
 
         }
-        @media only screen and (min-width: 1000px) {
+        @media only screen and (min-width: $screen-pc) {
         }
 
         &__item {
@@ -86,18 +86,18 @@ header {
           font-size: 10px;
 
 
-          //@media only screen and (min-width: 400px) {
+          //@media only screen and (min-width: $screen-mobile) {
           //  display: flex;
           //}
-          @media only screen and (min-width: 800px) {
+          @media only screen and (min-width: $screen-tablet) {
             flex-direction: row;
             visibility: visible;
             font-size: 14px;
           }
-          @media only screen and (min-width: 1000px) {
+          @media only screen and (min-width: $screen-pc) {
           }
           &:hover .main-nav__children {
-            @media only screen and (min-width: 400px) {
+            @media only screen and (min-width: $screen-mobile) {
               display: block;
             }
           }
@@ -108,27 +108,27 @@ header {
           display: none;
 
 
-          @media only screen and (min-width: 400px) {
+          @media only screen and (min-width: $screen-mobile) {
 
           }
-          @media only screen and (min-width: 800px) {
+          @media only screen and (min-width: $screen-tablet) {
             flex-direction: row;
             display: block;
             font-size: 14px;
           }
-          @media only screen and (min-width: 1000px) {
+          @media only screen and (min-width: $screen-pc) {
           }
 
           &--button {
             display: block;
             color: white;
-            @media only screen and (min-width: 400px) {
+            @media only screen and (min-width: $screen-mobile) {
               //color:red !important; ;
             }
-            @media only screen and (min-width: 800px) {
+            @media only screen and (min-width: $screen-tablet) {
               display: none;
             }
-            @media only screen and (min-width: 1000px) {
+            @media only screen and (min-width: $screen-pc) {
             }
           }
         }

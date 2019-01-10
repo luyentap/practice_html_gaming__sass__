@@ -11,13 +11,13 @@ part1: left sibar of the page,contain posts
 
   color: white;
 
-  @media only screen and (min-width: 400px) {
+  @media only screen and (min-width: $screen-mobile) {
     //width: 100%;
     //justify-content: space-around;
   }
-  @media only screen and (min-width: 800px) {
+  @media only screen and (min-width: $screen-tablet) {
   }
-  @media only screen and (min-width: 1000px) {
+  @media only screen and (min-width: $screen-pc) {
     width: 66%;
     justify-content: space-around;
   }
@@ -32,16 +32,16 @@ part1: left sibar of the page,contain posts
     background: #392D49;
     border-radius: 20px;
 
-    @media only screen and (min-width: 400px) {
+    @media only screen and (min-width: $screen-mobile) {
       //flex-basis: 100%;
       //flex-wrap: wrap;
       justify-content: center;
     }
-    @media only screen and (min-width: 800px) {
+    @media only screen and (min-width: $screen-tablet) {
       flex-basis: 45%;
       justify-content: center
     }
-    @media only screen and (min-width: 1000px) {
+    @media only screen and (min-width: $screen-pc) {
     }
 
     .posts__thumb {
@@ -142,13 +142,13 @@ part1: left sibar of the page,contain posts
         @include font($size: 15px, $style: italic);
         text-transform: uppercase;
 
-        @media only screen and (min-width: 400px) {
+        @media only screen and (min-width: $screen-mobile) {
           //font-size: 15px;
         }
-        @media only screen and (min-width: 800px) {
+        @media only screen and (min-width: $screen-tablet) {
           font-size: 25px;
         }
-        @media only screen and (min-width: 1000px) {
+        @media only screen and (min-width: $screen-pc) {
         }
         &:hover {
           color: #ffc107;

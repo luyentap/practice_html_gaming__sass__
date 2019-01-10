@@ -44,7 +44,7 @@
  the responsive of page:
 ===========================================================
  *********************************************************/
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: $screen-mobile) {
   //container
   .container {
     margin: 0 10%;
@@ -133,7 +133,7 @@
   }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: $screen-tablet) {
 
   .header__top-bar{
     visibility: visible;
@@ -164,7 +164,7 @@
   }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: $screen-pc) {
   //conainer
   .container {
     margin: 0 5%;
@@ -203,7 +203,7 @@
 //
 //}
 //
-//@media only screen and (max-width: 800px) {
+//@media only screen and (max-width: $screen-tablet) {
 //  .container {
 //    margin: 0 10%;
 //  }

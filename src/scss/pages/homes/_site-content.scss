@@ -9,14 +9,14 @@
 
     border: solid 2px red;
     /*!*flex-wrap: wrap;*!  2sibar auto xuống dòng*/
-    @media only screen and (min-width: 400px) {
+    @media only screen and (min-width: $screen-mobile) {
       //width: 100%;
       //flex-wrap: wrap; //down to the line
       //justify-content: center;
     }
-    @media only screen and (min-width: 800px) {
+    @media only screen and (min-width: $screen-tablet) {
     }
-    @media only screen and (min-width: 1000px) {
+    @media only screen and (min-width: $screen-pc) {
     }
   }
 

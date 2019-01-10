@@ -9,14 +9,14 @@ part2: the right of body page
   color:white;
   width: 100%;
 
-  @media only screen and (min-width: 400px) {
+  @media only screen and (min-width: $screen-mobile) {
     //width: 100%;
   }
 
-  @media only screen and (min-width: 800px) {
+  @media only screen and (min-width: $screen-tablet) {
     margin-top: 40px;
   }
-  @media only screen and (min-width: 1000px) {
+  @media only screen and (min-width: $screen-pc) {
     width: 34%;
 
   }
@@ -27,13 +27,13 @@ part2: the right of body page
     border-radius: 20px;
     text-align: center;
 
-    @media only screen and (min-width: 400px) {
+    @media only screen and (min-width: $screen-mobile) {
       //width: 100%;
       //margin-bottom: 20px;
     }
-    @media only screen and (min-width: 800px) {
+    @media only screen and (min-width: $screen-tablet) {
     }
-    @media only screen and (min-width: 1000px) {
+    @media only screen and (min-width: $screen-pc) {
     }
 
     //background: $green;
