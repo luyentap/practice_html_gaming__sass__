@@ -77,30 +77,6 @@ ul {
 .container {
   margin: 0 5% 0 5%; }
 
-.col-lg-8 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 66%;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
-
-.col-sm-6 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 45%;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
-
-.col-lg-4 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 34%;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
-
 /*********************************************************
 ==========================================================
 end the common
@@ -109,7 +85,7 @@ end the common
 html, body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", "sans-serif";
   background: #2B2236; }
 
 header {

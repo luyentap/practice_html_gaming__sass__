@@ -117,7 +117,7 @@ html,body{
   padding: 0;
 
   //font-family: Georgia;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: $font-page_roboto,$font-page_sans;
   background:$color-background;
 
 }
