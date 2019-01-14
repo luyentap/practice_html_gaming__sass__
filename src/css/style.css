@@ -287,7 +287,6 @@ header {
     width: 100%;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    border: solid 2px red;
     /*!*flex-wrap: wrap;*!  2sibar auto xuống dòng*/ }
 
 /*********************************************************
